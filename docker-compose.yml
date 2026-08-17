@@ -1,0 +1,11 @@
+services:
+  mock-payment-api:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      SUCCESS_RATE: "0.6"
+      LATENCY_RATE: "0.2"
+      TIMEOUT_RATE: "0.1"
+      DOWN_RATE: "0.05"
+      DECLINE_RATE: "0.05"
